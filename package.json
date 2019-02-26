@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/henriquechaves/video-maker/issues"
   },
-  "homepage": "https://github.com/henriquechaves/video-maker#readme"
+  "homepage": "https://github.com/henriquechaves/video-maker#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
