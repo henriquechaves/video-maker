@@ -18,7 +18,6 @@ function start() {
   }
 
   console.log(content)
-    
 }
 
 start()
