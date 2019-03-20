@@ -1,2 +1,2 @@
 # video-maker
-Projeto Open Source para fazer videos automatizados`
+Projeto Open Source para fazer videos automatizados.
