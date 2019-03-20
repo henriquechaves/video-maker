@@ -1,19 +1,18 @@
-<script type="text/javascript">
-	
 
-	function setCookie(cname,cvalue,exdays) {
-            var d = new Date();
-            d.setTime(d.getTime() + (exdays*24*60*60*1000));
-            var expires = "expires=" + d.toGMTString();
-            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-        }
+
+function setCookie(cname,cvalue,exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    const expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
 function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
+    const name = cname + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for(const i = 0; i < ca.length; i++) {
+        const c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
@@ -25,7 +24,7 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-    var user = getCookie("username");
+    const user = getCookie("username");
     if (user != "") {
         return true;
     } else {
@@ -34,7 +33,7 @@ function checkCookie() {
 }
   
 function findGetParameter(parameterName) {
-    var result = null,
+    const result = null,
         tmp = [];
     location.search
         .substr(1)
@@ -48,14 +47,14 @@ function findGetParameter(parameterName) {
 
 if(!getCookie('pixel_ga_transactionpesonalizados')){  
 
-    var getUrlParameter = function getUrlParameter(sParam) {
-        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-            sURLVariables = sPageURL.split('&'),
+    const getUrlParameter = function getUrlParameter(sParam) {
+        const sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLconstiables = sPageURL.split('&'),
             sParameterName,
             i;
 
-        for (i = 0; i < sURLVariables.length; i++) {
-            sParameterName = sURLVariables[i].split('=');
+        for (i = 0; i < sURLconstiables.length; i++) {
+            sParameterName = sURLconstiables[i].split('=');
 
             if (sParameterName[0] === sParam) {
                 return sParameterName[1] === undefined ? true : sParameterName[1];
@@ -70,16 +69,16 @@ if(!getCookie('pixel_ga_transactionpesonalizados')){
         }).join(''));
     }
 
-    var transaction = getUrlParameter('transaction');
-    var firstOrderFunnelInfo = getUrlParameter('firstOrderFunnelInfo');
-    var aprovada = getUrlParameter('aprovada');
+    const transaction = getUrlParameter('transaction');
+    const firstOrderFunnelInfo = getUrlParameter('firstOrderFunnelInfo');
+    const aprovada = getUrlParameter('aprovada');
 
     if(transaction != undefined){ //Se Existe GET transaction
       
     }else if(firstOrderFunnelInfo != undefined){ //Se Existe GET firstOrderFunnelInfo
       
-      var decripy = b64DecodeUnicode(firstOrderFunnelInfo);
-      var arrayDecripy = JSON.parse(decripy);
+      const decripy = b64DecodeUnicode(firstOrderFunnelInfo);
+      const arrayDecripy = JSON.parse(decripy);
 
       transaction = arrayDecripy.previousTransaction;
 
@@ -118,4 +117,3 @@ if(!getCookie('pixel_ga_transactionpesonalizados')){
     }
 
 }
-</script>
