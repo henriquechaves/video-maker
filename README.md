@@ -3,7 +3,7 @@ Projeto Open Source para fazer videos automatizados.
 
 ```
 Por vezes, irrequietas palavras nos precipitam
-numa exaustão de sons que que colidem com o próprio tato, 
+numa exaustão de sons que colidem com o próprio tato, 
 feito Coisa.
 Feito uma substância morna qualquer que tumultua a existência
 com odor de mediocridade:
