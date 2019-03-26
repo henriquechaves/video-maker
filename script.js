@@ -1,5 +1,3 @@
-
-
 function setCookie(cname,cvalue,exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -75,7 +73,7 @@ if(!getCookie('pixel_ga_transactionpesonalizados')){
 
     if(transaction != undefined){ //Se Existe GET transaction
       
-    }else if(firstOrderFunnelInfo != undefined){ //Se Existe GET firstOrderFunnelInfo
+    } else if(firstOrderFunnelInfo != undefined){ //Se Existe GET firstOrderFunnelInfo
       
       const decripy = b64DecodeUnicode(firstOrderFunnelInfo);
       const arrayDecripy = JSON.parse(decripy);
