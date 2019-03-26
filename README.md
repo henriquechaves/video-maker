@@ -1,6 +1,8 @@
 # video-maker
 Projeto Open Source para fazer videos automatizados.
 
+------------------------------------------------------------------------
+
 ```
 Por vezes, irrequietas palavras nos precipitam
 numa exaustão de sons que colidem com o próprio tato, 
@@ -11,7 +13,7 @@ Um suspiro quase sóbrio de que transcendemos o lapso instante de Ser.
 
 Eis a angústia, a dor do pensar e de estar condenado a ser lúcido.
 ```
--------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ```
 O quase é como um lapso atemporal 
